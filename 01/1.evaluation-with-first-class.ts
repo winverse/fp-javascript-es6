@@ -10,4 +10,7 @@
     함수의 결과로 사용될 수 있다.
 `;
 
-console.log('hee');
+const a = 10;
+const add10 = a => a + 10;
+const r = add10(a);
+console.log('실행');
