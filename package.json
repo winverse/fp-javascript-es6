@@ -2,5 +2,15 @@
   "name": "fp-basic",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpileOnly --ignore-watch node_modules ./**/**.ts"
+  },
+  "dependencies": {
+    "@types/node": "^13.1.2",
+    "ts-node-dev": "^1.0.0-pre.44"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.4"
+  }
 }
