@@ -1,4 +1,4 @@
-import { log } from '../index';
+import { log } from '../../index';
 `
   # 일급 함수
     - 함수를 값으로 다를 수 있다. -> 변수에 함수를 담을 수 있다는 이야기
@@ -9,3 +9,5 @@ console.log('실행123123');
 const add5 = a => a + 5;
 log(add5);
 log(add5(5));
+
+console.log('실행213');
