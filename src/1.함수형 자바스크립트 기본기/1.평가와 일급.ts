@@ -1,3 +1,4 @@
+import { log } from '../lib/utils';
 `
   # 평가
     코드가 계산(Evaluation) 되어 값을 만드는 것`;
@@ -12,5 +13,6 @@
 
 const a = 10;
 const add10 = a => a + 10;
-const r = add10(a);
-// console.log('실행');
+const result = add10(a);
+
+log('result', result);

@@ -4,13 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpileOnly --ignore-watch node_modules ./**/**.ts"
+    "dev": "ts-node-dev --respawn --transpileOnly --ignore-watch node_modules ./index.ts"
   },
   "dependencies": {
     "@types/node": "^13.1.2",
+    "glob": "^7.1.6",
     "ts-node-dev": "^1.0.0-pre.44"
   },
   "devDependencies": {
+    "@types/glob": "^7.1.1",
     "typescript": "^3.7.4"
   }
 }
