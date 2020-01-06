@@ -15,4 +15,4 @@ const a = 10;
 const add10 = a => a + 10;
 const result = add10(a);
 
-log('result', result);
+// log('result', result);

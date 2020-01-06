@@ -8,4 +8,4 @@ import { log } from '../lib/utils';
 
 const add5 = a => a + 5;
 
-log('add', add5(5));
+// log('add', add5(5));
