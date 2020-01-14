@@ -19,7 +19,7 @@ function* limit(l, iter) {
     if (a === l) return;
   }
 }
-function* odds(l) {
+export function* odds(l) {
   // 홀수만을 출력하는 제너레이터
   // for (let i = 0; i <= l; i += 1) {
   //   if (i % 2) yield i;
