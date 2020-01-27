@@ -1,5 +1,6 @@
 import { log } from '../lib/utils';
 import { products } from './3.filter';
+import { curry } from '../5.코드를 값으로 다루어 표현력 높이기/3.curry';
 `
   # reduce
 `;
@@ -13,7 +14,7 @@ for (const n of nums) {
 
 // log(total);
 
-export const reduce = (f: (a, b) => number, acc: number | any[], iter?: number[] | any) => {
+export const reduce = curry((f: (a, b) => number, acc: number | any[], iter?: number[] | any) => {
   if (!iter) {
     iter = acc[Symbol.iterator]();
     acc = (iter as any).next().value;
@@ -22,7 +23,7 @@ export const reduce = (f: (a, b) => number, acc: number | any[], iter?: number[]
     acc = f(acc, a);
   }
   return acc;
-};
+});
 
 const add = (a, b): number => a + b;
 

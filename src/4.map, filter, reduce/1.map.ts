@@ -1,4 +1,5 @@
 import { log } from '../lib/utils';
+import { curry } from '../5.코드를 값으로 다루어 표현력 높이기/3.curry';
 `
   map
 `;
@@ -11,13 +12,13 @@ const products = [
   { name: '바지', price: 25000 },
 ];
 
-export const map = (f, iter) => {
+export const map = curry((f, iter) => {
   let res = [];
   for (const a of iter) {
     res.push(f(a));
   }
   return res;
-};
+});
 
 // name과 price 를 뽑는 기본 함수
 

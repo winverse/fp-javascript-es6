@@ -24,3 +24,12 @@ const add = (a, b) => a + b;
 //   prices => reduce(add, prices),
 //   log,
 // );
+
+// curry 함수가 적용되면 더욱 가독성이 좋다.
+// go(
+//   products,
+//   filter(p => p.price < 20000),
+//   map(p => p.price),
+//   reduce(add),
+//   log,
+// )
