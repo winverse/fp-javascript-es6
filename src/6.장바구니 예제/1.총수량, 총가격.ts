@@ -37,4 +37,4 @@ const total_price = pipe(
 
 const sum = (f, iter) => go(iter, map(f), reduce(add));
 
-log(sum(p => p.price * p.quantity, products));
+// log(sum(p => p.price * p.quantity, products));
