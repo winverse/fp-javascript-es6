@@ -6,7 +6,7 @@ import { reduce } from '../4.map, filter, reduce/4.reduce';
 export const add = (a, b) => a + b;
 export const range: (length: number) => number[] = length => {
   let i = -1;
-  let res = [];
+  let res: number[] = [];
   while (++i < length) {
     res.push(i);
   }
@@ -19,8 +19,10 @@ const list = range(5);
 
 // 느긋한 L.range
 
-interface IL {
+export interface IL {
   range?: any;
+  map?: any;
+  filter?: any;
 }
 export const L: IL = {};
 
@@ -34,7 +36,7 @@ L.range = function*(length) {
 };
 
 const lists = L.range(5);
-// log(lists);
+// log('list', lists);
 // log(reduce(add, lists));
 
 // test

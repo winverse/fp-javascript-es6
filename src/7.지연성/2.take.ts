@@ -6,7 +6,7 @@ import { reduce } from '../4.map, filter, reduce/4.reduce';
 
 // take 숫자 만큼 개수를 가져옴
 
-const take = curry((l, iter) => {
+export const take = curry((l, iter) => {
   let res = [];
   for (const a of iter) {
     res.push(a);
